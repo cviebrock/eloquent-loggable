@@ -1,0 +1,49 @@
+{
+    "name": "cviebrock/eloquent-loggable",
+    "description": "Easy change logging for your Eloquent models in Laravel 5.",
+    "keywords": [
+        "laravel",
+        "eloquent",
+        "log"
+    ],
+    "homepage": "https://github.com/cviebrock/eloquent-loggableloggable",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Colin Viebrock",
+            "email": "colin@viebrock.ca"
+        }
+    ],
+    "require": {
+        "php": ">=7.0",
+        "illuminate/support": "^5.4"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "~5.7",
+        "orchestra/database": "~3.4",
+        "orchestra/testbench": "^3.4",
+        "mockery/mockery": "^0.9.4"
+    },
+    "autoload": {
+        "psr-4": {
+            "Cviebrock\\EloquentLoggable\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Cviebrock\\EloquentLoggable\\Tests\\": "tests"
+        }
+    },
+    "scripts": {
+        "test": "phpunit"
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Cviebrock\\EloquentLoggable\\ServiceProvider"
+            ]
+        }
+    }
+}
